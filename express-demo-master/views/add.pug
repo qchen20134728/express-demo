@@ -1,0 +1,23 @@
+html
+  head
+    title= title
+  body
+    h1=message
+
+    each val in addList
+      div id:#{val.id} 
+      input(type="text") 
+      div name:#{val.name} 
+      input(type="text") 
+      div sex:#{val.sex} 
+      input(type="text")  
+      div 学院:#{val.xueyuan} 
+      input(type="text")  
+      div 系别:#{val.xibie}
+      input(type="text")  
+      div 学号:#{val.num} 
+      input(type="text") 
+      a(href="./submit/" + val.id) 提交
+
+
+       //董名 郑斐

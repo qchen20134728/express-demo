@@ -1,0 +1,14 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    a(href='./add/') 增加
+    form
+      each val in list
+        div #{val.id}  #{val.name}  #{val.sex}  #{val.xueyuan}  #{val.xibie}  #{val.num} 
+        a(href="./delete/" + val.id) 删除  
+        a(href="./change/" + val.id) 修改
+
+      //陈琦
+    
